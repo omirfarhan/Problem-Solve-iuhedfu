@@ -4,6 +4,7 @@ public class main {
 
 
 
+    //Find smallest or largest index and value in array
 
     public static void main(String[] args){
 
