@@ -14,8 +14,7 @@ public class HomeWork {
         };
 
         //intersection of array
-        int[] array1=new int[]{1,3,5};
-        int[] array2=new int[]{2,3};
+
 
         HomeWork work=new HomeWork();
         work.suminarray(arr);
