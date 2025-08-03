@@ -4,25 +4,19 @@ public class MaxSubarray {
 
     public static void main(String[] args){
 
-        int[] arr=new int[]{5,4,-1,7,8};
+        int[] arr=new int[]{1,2,4};
 
         int maxSub=Integer.MIN_VALUE;
-
-        for(int start=0;start<arr.length;start++){
-
-            int currentSum=0;
-
-            for(int end=start;  end<arr.length; end++){
-
-                currentSum=currentSum+arr[end];
-                maxSub=Math.max(currentSum,maxSub);
-
-            }
-
-
+        int current=0;
+        for(int start: arr){
+          current=start;
+         // maxSub=Math.max(current,maxSub);
+          if(current<0){
+              current=0;
+          }
         }
 
-        System.out.println("Max sum subarray is: "+maxSub);
+        System.out.println("Max sum subarray is: "+current);
 
     }
 
